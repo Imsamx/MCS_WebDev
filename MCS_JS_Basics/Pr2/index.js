@@ -1,0 +1,6 @@
+totalCash = prompt('сколько у нас кэша?')
+watchesCount = prompt('сколько часов берем?')
+earringsCount = prompt('сколько сережек берем?')
+watchesSum = watchesCount*prompt('сколько стоят часы?')
+earringsSum = earringsCount*prompt('сколько стоят сережки?')
+totalCash>=(watchesSum+earringsSum)
