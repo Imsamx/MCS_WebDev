@@ -1,0 +1,17 @@
+@import url(reset.css);
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+p {
+	font-size: 30px;
+}
+
+.scale {
+	width: 500px;
+	height: 30px;
+}
+
