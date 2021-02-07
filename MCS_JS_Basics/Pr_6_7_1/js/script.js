@@ -1,20 +1,13 @@
 class Tiger {
 	constructor(name) {
 		this.name = name;
+		this.happiness = 0;
 	}
 	feedCat() {
-		return 'Purrrrrr';
-	}
-}
-
-class angryTiger extends Tiger {
-	throwDart() {
-		return 'ZzZzzZzZz';
+		this.happiness+1;
 	}
 }
 
 const Animal = new Tiger('Тигруля')
 console.log(Animal.feedCat())
 
-const ShereKhan = new angryTiger('Шерхан')
-console.log(ShereKhan.throwDart())
