@@ -10,8 +10,12 @@ p {
 	font-size: 30px;
 }
 
+content {
+	width: 1024px;
+}
+
 .scale {
-	width: 500px;
+	width: 100%;
 	height: 30px;
 }
 

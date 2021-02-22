@@ -14,26 +14,18 @@ let crypto = [
 ]
 
 const scales = document.querySelectorAll('.scale');
-
-for(let i = 0; i<scales.length; i++) {
-	scales[i].style.width = crypto[i].price+'px';
-}
-
 const names = document.querySelectorAll('.name');
-
-for(let j = 0; j<names.length; j++) {
-	names[j].innerHTML = crypto[j].name;
-}
-
 const prices = document.querySelectorAll('.price');
 
-for(let k = 0; k<prices.length; k++) {
-	prices[k].innerHTML = crypto[k].price;
+for(let cr = 0; cr<crypto.length; cr++) {
+	scales[cr].style.width = crypto[cr].price/100 +'%';
+  names[cr].innerHTML = crypto[cr].name;
+  prices[cr].innerHTML = crypto[cr].price;
 }
 
 let color = ['red', 'blue', 'green'];
 
-for(let l = 0; l<color.length; l++) {
-	scales[l].style.backgroundColor = color[l];
+for(let i = 0; i<color.length; i++) {
+	scales[i].style.backgroundColor = color[i];
 }
 

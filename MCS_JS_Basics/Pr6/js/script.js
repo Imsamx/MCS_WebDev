@@ -40,22 +40,21 @@ let form = document.forms[0];
 
 form.onsubmit = function(e) {
 	e.preventDefault();
-	var name = form.elements.name.value;
-	var cat = form.elements.cat.value;
-	var rest = form.elements.rest.value;
-	var money = form.elements.money.value;
+	let name = form.elements.name.value;
+	let cat = form.elements.cat.value;
+	let rest = form.elements.rest.value;
+	let money = form.elements.money.value;
 	const Example = new Person(name);
-	if (cat == "yes") {
+	if (cat === "yes") {
 		Example.hasCat()
 	}
-	if (rest == "yes") {
+	if (rest === "yes") {
 		Example.hasRest()
 	}
-	if (money == "yes") {
+	if (money === "yes") {
 		Example.hasMoney()
 	}
 	    Example.isSunny()
-console.log(Example.happiness);
 
 	const personName = document.querySelector('.personName');
     const icon = document.querySelector('.icon');
